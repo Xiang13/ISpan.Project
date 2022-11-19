@@ -16,7 +16,7 @@ namespace ISpan.inventory
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new inventoryForm());
+			Application.Run(new LoginFrom());
 		}
 	}
 }

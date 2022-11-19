@@ -50,36 +50,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateProductForm.cs">
+    <Compile Include="CreateCustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateProductForm.Designer.cs">
-      <DependentUpon>CreateProductForm.cs</DependentUpon>
+    <Compile Include="CreateCustomerForm.Designer.cs">
+      <DependentUpon>CreateCustomerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditProductForm.cs">
+    <Compile Include="CreateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditProductForm.Designer.cs">
-      <DependentUpon>EditProductForm.cs</DependentUpon>
+    <Compile Include="CreateForm.Designer.cs">
+      <DependentUpon>CreateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="inventoryForm.cs">
+    <Compile Include="EditCustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="inventoryForm.Designer.cs">
-      <DependentUpon>inventoryForm.cs</DependentUpon>
+    <Compile Include="EditCustomerForm.Designer.cs">
+      <DependentUpon>EditCustomerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\InventoryService.cs" />
-    <Compile Include="Models\ViewModels\CreateProductVM.cs" />
-    <Compile Include="Models\ViewModels\inventoryIndexVM.cs" />
-    <Compile Include="Models\ViewModels\SupplierVM.cs" />
+    <Compile Include="EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infra\DAOs\ProductDAO.cs" />
+    <Compile Include="Infra\Extensions\StringExtensions.cs" />
+    <Compile Include="LoginFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrom.Designer.cs">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DTOs\ProductDTO.cs" />
+    <Compile Include="Models\ViewModels\CreateVM.cs" />
+    <Compile Include="Models\ViewModels\CustomersVM.cs" />
+    <Compile Include="Models\ViewModels\CustomerVM.cs" />
+    <Compile Include="Models\ViewModels\DeliveryVM.cs" />
+    <Compile Include="Models\ViewModels\EditVM.cs" />
+    <Compile Include="Models\ViewModels\LoginVM.cs" />
+    <Compile Include="Models\ViewModels\ProductIndexVM.cs" />
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserService.cs" />
-    <EmbeddedResource Include="CreateProductForm.resx">
-      <DependentUpon>CreateProductForm.cs</DependentUpon>
+    <EmbeddedResource Include="CreateCustomerForm.resx">
+      <DependentUpon>CreateCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="inventoryForm.resx">
-      <DependentUpon>inventoryForm.cs</DependentUpon>
+    <EmbeddedResource Include="CreateForm.resx">
+      <DependentUpon>CreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCustomerForm.resx">
+      <DependentUpon>EditCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrom.resx">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,7 +134,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.CustomersIndexVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.CustomersVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.CustomerVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.DeliveryVM.datasource" />
     <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.inventoryIndexVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.ProductIndexVM.datasource" />
     <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.SupplierVM.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -104,6 +153,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
