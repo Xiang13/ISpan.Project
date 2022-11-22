@@ -12,6 +12,7 @@ namespace ISpan.inventory
 {
 	public partial class MainForm : Form
 	{
+		bool isFind = false;
 		public MainForm()
 		{
 			InitializeComponent();
@@ -20,6 +21,22 @@ namespace ISpan.inventory
 
 		private void 查詢ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			//foreach (Form form in this.MdiChildren)
+			//{
+			//	if (form.Name == "ProductForm")
+			//	{
+			//		isFind = true;
+			//		form.MdiParent = this;
+			//		form.Focus();
+			//		return;
+			//	}
+			//}
+			//if (isFind == false)
+			//{
+			//	ProductForm childForm = new ProductForm();
+			//	childForm.MdiParent = this;
+			//	childForm.Show();
+			//}
 			var frm = new ProductForm();
 			frm.MdiParent = this;
 			frm.Show();
@@ -27,6 +44,21 @@ namespace ISpan.inventory
 
 		private void 維護使用者ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			//foreach (Form form in this.MdiChildren)
+			//{
+			//	if (form.Name == "EditForm")
+			//	{
+			//		isFind = true;
+			//		form.MdiParent = this;
+			//		form.Focus();
+			//	}
+			//}
+			//if (isFind == false)
+			//{
+			//	EditForm childForm = new EditForm();
+			//	childForm.MdiParent = this;
+			//	childForm.Show();
+			//}
 			var frm = new EditForm();
 			frm.MdiParent = this;
 			frm.Show();

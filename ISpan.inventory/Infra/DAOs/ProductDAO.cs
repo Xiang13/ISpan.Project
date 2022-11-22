@@ -111,7 +111,7 @@ namespace ISpan.inventory.Infra.DAOs
 		{
 			string sql = @"SELECT * FROM customers";
 			var dbHelper = new SqlDbHelper("default");
-			// 存放在field裡, 稍後在 grid CellClick事件會需要再度用到它
+
 			return dbHelper.Select(sql, null)
 				.AsEnumerable()
 				.Select(row => ToCustomerDTO(row));

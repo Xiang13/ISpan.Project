@@ -16,5 +16,6 @@ namespace ISpan.inventory.Models.ViewModels
 		public string DeliveryName { get; set; }
 		public string DeliveryPhone { get; set; }
 		public DateTime ArriveDate { get; set; }
+		//public bool Delete { get; set; }
 	}
 }

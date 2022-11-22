@@ -40,7 +40,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(34, 41);
+			this.label4.Location = new System.Drawing.Point(30, 43);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(29, 12);
 			this.label4.TabIndex = 7;
@@ -49,7 +49,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(34, 87);
+			this.label3.Location = new System.Drawing.Point(30, 89);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(53, 12);
 			this.label3.TabIndex = 8;
@@ -58,7 +58,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(34, 139);
+			this.label2.Location = new System.Drawing.Point(30, 141);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(77, 12);
 			this.label2.TabIndex = 9;
@@ -66,31 +66,31 @@
 			// 
 			// customerAddressTxtBox
 			// 
-			this.customerAddressTxtBox.Location = new System.Drawing.Point(125, 84);
+			this.customerAddressTxtBox.Location = new System.Drawing.Point(121, 86);
 			this.customerAddressTxtBox.Name = "customerAddressTxtBox";
 			this.customerAddressTxtBox.Size = new System.Drawing.Size(121, 22);
-			this.customerAddressTxtBox.TabIndex = 4;
+			this.customerAddressTxtBox.TabIndex = 1;
 			// 
 			// customerTxtBox
 			// 
-			this.customerTxtBox.Location = new System.Drawing.Point(125, 38);
+			this.customerTxtBox.Location = new System.Drawing.Point(121, 40);
 			this.customerTxtBox.Name = "customerTxtBox";
 			this.customerTxtBox.Size = new System.Drawing.Size(121, 22);
-			this.customerTxtBox.TabIndex = 5;
+			this.customerTxtBox.TabIndex = 0;
 			// 
 			// customerPhoneTxtBox
 			// 
-			this.customerPhoneTxtBox.Location = new System.Drawing.Point(125, 136);
+			this.customerPhoneTxtBox.Location = new System.Drawing.Point(121, 138);
 			this.customerPhoneTxtBox.Name = "customerPhoneTxtBox";
 			this.customerPhoneTxtBox.Size = new System.Drawing.Size(121, 22);
-			this.customerPhoneTxtBox.TabIndex = 6;
+			this.customerPhoneTxtBox.TabIndex = 2;
 			// 
 			// saveBtn
 			// 
-			this.saveBtn.Location = new System.Drawing.Point(171, 195);
+			this.saveBtn.Location = new System.Drawing.Point(167, 188);
 			this.saveBtn.Name = "saveBtn";
 			this.saveBtn.Size = new System.Drawing.Size(75, 23);
-			this.saveBtn.TabIndex = 10;
+			this.saveBtn.TabIndex = 3;
 			this.saveBtn.Text = "儲存";
 			this.saveBtn.UseVisualStyleBackColor = true;
 			this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
@@ -99,7 +99,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(310, 252);
+			this.ClientSize = new System.Drawing.Size(281, 233);
 			this.Controls.Add(this.saveBtn);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
@@ -107,8 +107,10 @@
 			this.Controls.Add(this.customerAddressTxtBox);
 			this.Controls.Add(this.customerTxtBox);
 			this.Controls.Add(this.customerPhoneTxtBox);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
 			this.Name = "CreateCustomerForm";
-			this.Text = "CreateCustomerForm";
+			this.Text = "新增客戶";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

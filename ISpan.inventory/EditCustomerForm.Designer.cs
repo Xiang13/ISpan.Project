@@ -47,21 +47,21 @@
 			this.customerAddressTxtBox.Location = new System.Drawing.Point(72, 101);
 			this.customerAddressTxtBox.Name = "customerAddressTxtBox";
 			this.customerAddressTxtBox.Size = new System.Drawing.Size(153, 22);
-			this.customerAddressTxtBox.TabIndex = 0;
+			this.customerAddressTxtBox.TabIndex = 1;
 			// 
 			// customerPhoneTxtBox
 			// 
 			this.customerPhoneTxtBox.Location = new System.Drawing.Point(72, 156);
 			this.customerPhoneTxtBox.Name = "customerPhoneTxtBox";
 			this.customerPhoneTxtBox.Size = new System.Drawing.Size(153, 22);
-			this.customerPhoneTxtBox.TabIndex = 0;
+			this.customerPhoneTxtBox.TabIndex = 2;
 			// 
 			// saveCustomBtn
 			// 
 			this.saveCustomBtn.Location = new System.Drawing.Point(39, 236);
 			this.saveCustomBtn.Name = "saveCustomBtn";
 			this.saveCustomBtn.Size = new System.Drawing.Size(75, 23);
-			this.saveCustomBtn.TabIndex = 1;
+			this.saveCustomBtn.TabIndex = 3;
 			this.saveCustomBtn.Text = "保存";
 			this.saveCustomBtn.UseVisualStyleBackColor = true;
 			this.saveCustomBtn.Click += new System.EventHandler(this.saveCustomBtn_Click);
@@ -71,7 +71,7 @@
 			this.deleteCustomBtn.Location = new System.Drawing.Point(184, 236);
 			this.deleteCustomBtn.Name = "deleteCustomBtn";
 			this.deleteCustomBtn.Size = new System.Drawing.Size(75, 23);
-			this.deleteCustomBtn.TabIndex = 2;
+			this.deleteCustomBtn.TabIndex = 4;
 			this.deleteCustomBtn.Text = "刪除";
 			this.deleteCustomBtn.UseVisualStyleBackColor = true;
 			this.deleteCustomBtn.Click += new System.EventHandler(this.deleteCustomBtn_Click);
@@ -80,14 +80,15 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(455, 450);
+			this.ClientSize = new System.Drawing.Size(293, 306);
 			this.Controls.Add(this.deleteCustomBtn);
 			this.Controls.Add(this.saveCustomBtn);
 			this.Controls.Add(this.customerPhoneTxtBox);
 			this.Controls.Add(this.customerAddressTxtBox);
 			this.Controls.Add(this.customerNameTxtBox);
+			this.MaximizeBox = false;
 			this.Name = "EditCustomerForm";
-			this.Text = "EditCustomerForm";
+			this.Text = "編輯客戶資訊";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

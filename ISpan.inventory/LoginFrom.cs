@@ -1,4 +1,5 @@
-﻿using ISpan.inventory.Infra.DAOs;
+﻿using ISpan.inventory.Infra;
+using ISpan.inventory.Infra.DAOs;
 using ISpan.inventory.Models.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -35,8 +36,8 @@ namespace ISpan.inventory
 				{"Password", passwordTextBox},
 			};
 
-			//bool isValid = ValidationHelper.Validate(model, map, errorProvider1);
-			//if (!isValid) return;
+			bool isValid = ValidationHelper.Validate(model, map, errorProvider1);
+			if (!isValid) return;
 
 			// 判斷帳密是否正確
 			bool result = new ProductDAO().Authenticate(model);

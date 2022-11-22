@@ -37,6 +37,10 @@
       <HintPath>..\..\Solution11\ISpan.Utility\bin\Debug\ISpan.Utility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,6 +80,7 @@
     </Compile>
     <Compile Include="Infra\DAOs\ProductDAO.cs" />
     <Compile Include="Infra\Extensions\StringExtensions.cs" />
+    <Compile Include="Infra\ValidationHelper.cs" />
     <Compile Include="LoginFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +120,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditForm.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginFrom.resx">
       <DependentUpon>LoginFrom.cs</DependentUpon>
@@ -134,6 +140,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.CustomersIndexVM.datasource" />
     <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.CustomersVM.datasource" />
     <None Include="Properties\DataSources\ISpan.inventory.Models.ViewModels.CustomerVM.datasource" />

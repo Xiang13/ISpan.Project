@@ -49,7 +49,7 @@
 			this.saveBtn.Location = new System.Drawing.Point(572, 144);
 			this.saveBtn.Name = "saveBtn";
 			this.saveBtn.Size = new System.Drawing.Size(75, 23);
-			this.saveBtn.TabIndex = 0;
+			this.saveBtn.TabIndex = 4;
 			this.saveBtn.Text = "儲存";
 			this.saveBtn.UseVisualStyleBackColor = true;
 			this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
@@ -63,10 +63,10 @@
 			// 
 			// arriveTxtBox
 			// 
-			this.arriveTxtBox.Location = new System.Drawing.Point(400, 145);
+			this.arriveTxtBox.Location = new System.Drawing.Point(400, 146);
 			this.arriveTxtBox.Name = "arriveTxtBox";
 			this.arriveTxtBox.Size = new System.Drawing.Size(121, 22);
-			this.arriveTxtBox.TabIndex = 1;
+			this.arriveTxtBox.TabIndex = 3;
 			// 
 			// deliveryCombox
 			// 
@@ -76,7 +76,7 @@
 			this.deliveryCombox.Location = new System.Drawing.Point(121, 34);
 			this.deliveryCombox.Name = "deliveryCombox";
 			this.deliveryCombox.Size = new System.Drawing.Size(121, 20);
-			this.deliveryCombox.TabIndex = 2;
+			this.deliveryCombox.TabIndex = 0;
 			this.deliveryCombox.ValueMember = "DeliveryId";
 			// 
 			// deliveryVMBindingSource
@@ -86,11 +86,11 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(309, 155);
+			this.label1.Location = new System.Drawing.Point(309, 149);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(53, 12);
 			this.label1.TabIndex = 3;
-			this.label1.Text = "到貨日期";
+			this.label1.Text = "到達日期";
 			// 
 			// label5
 			// 
@@ -138,7 +138,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(726, 205);
+			this.ClientSize = new System.Drawing.Size(694, 205);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
@@ -148,8 +148,10 @@
 			this.Controls.Add(this.arriveTxtBox);
 			this.Controls.Add(this.productTxtBox);
 			this.Controls.Add(this.saveBtn);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
 			this.Name = "CreateForm";
-			this.Text = "CreateForm";
+			this.Text = "新增訂單";
 			((System.ComponentModel.ISupportInitialize)(this.deliveryVMBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.customerVMBindingSource)).EndInit();
 			this.ResumeLayout(false);

@@ -53,6 +53,7 @@ namespace ISpan.inventory
 				DisplayCustomers();
 			}
 		}
+
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
 			int rowIndx = e.RowIndex;  // 使用者點到的索引值

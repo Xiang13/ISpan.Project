@@ -40,6 +40,8 @@ namespace ISpan.inventory
 				.Prepend(new DeliveryVM { DeliveryId = 0, DeliveryName = String.Empty })
 				.ToList();
 
+
+
 			this.deliverycomBox.DataSource = delivery;
 			customercomBox.DropDownStyle = ComboBoxStyle.DropDownList;
 
@@ -107,15 +109,18 @@ namespace ISpan.inventory
 				DisplayProducts();
 			}
 		}
-		private void customercomBox_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			initForm();
-		}
 
 		private void editCustomerBtn_Click(object sender, EventArgs e)
 		{
 			var frm = new EditForm();
 			DialogResult result = frm.ShowDialog();
+		}
+
+		private void ProductForm_Load(object sender, EventArgs e)
+		{
+			BindData(products);
+			DisplayProducts();
+			initForm();
 		}
 	}
 }
